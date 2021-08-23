@@ -1,0 +1,14 @@
+conda install -c conda-forge tibanna
+
+
+
+https://snakemake.readthedocs.io/en/stable/getting_started/installation.html#installation-via-pip
+conda create --name base2 python=3.9
+conda activate base2
+conda install -n base2 -c conda-forge mamba
+
+sudo apt-get install wget
+tar -xf v5.24.1.tar.gz --strip 1 "*/data" "*/environment.yaml"
+mamba env create --name snakemake-tutorial --file environment.yaml
+
+conda activate /Users/williamtun/opt/anaconda3/envs/base2/envs/snakemake-tutorial
